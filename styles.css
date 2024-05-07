@@ -129,7 +129,7 @@ body {
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
     #song-name {
-        font-size: 30px; /* Adjusted font size for smaller screens */
+        font-size: 20px; /* Adjusted font size for smaller screens */
     }
 
     #artist-name {
