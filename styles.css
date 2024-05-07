@@ -125,3 +125,21 @@ body {
     color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
     cursor: pointer;
 }
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    #song-name {
+        font-size: 30px; /* Adjusted font size for smaller screens */
+    }
+
+    #artist-name {
+        font-size: 15px; /* Adjusted font size for smaller screens */
+    }
+
+    .lyrics {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+    }
+    .album-info img {
+        max-width: 75px; /* Max width for smaller screens */
+    }
+}
