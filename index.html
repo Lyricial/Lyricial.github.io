@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyricial - Song Lyric Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="song-info">
+            <div class="album-info">
+                <label for="album-image-input">
+                    <img id="album-image" src="Assets/placeholder.jpg" alt="Album Image">
+                </label>
+                <input type="file" id="album-image-input" accept="image/*" style="display: none;">
+            </div>
+            <div class="text-info">
+                <h2 id="song-name" contenteditable="true">Song Name</h2>
+                <p id="artist-name" contenteditable="true">Artist Name</p>
+            </div>
+        </div>
+        <div class="lyrics" id="lyrics" contenteditable="true">Insert your lyrics here.</div>
+        <div class="watermark-container">
+            <div class="watermark" id="watermark">Lyricial</div>
+            <div id="test-grabber-container" style="display: none;">
+                <div class="test-grabber" id="test-grabber">URL Input</div>
+            </div>
+            <div id="toggle-test-grabber" class="toggle-icon">+</div>
+        </div>
+    </div>
+	
+    <script src="script.js"></script>
+</body>
+</html>

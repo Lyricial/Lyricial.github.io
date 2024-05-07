@@ -1,0 +1,127 @@
+/* styles.css */
+
+@font-face {
+    font-family: "CircularStd-Book";
+    src: url('Assets/circular-std-2.ttf') format('truetype');
+}
+
+body {
+    font-family: "CircularStd-Book", Arial, sans-serif; /* Use custom font */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #ffd3b6, #ffaaa5, #ff8b94, #ff6584); /* Random gradient with similar colors */
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative; /* Enable relative positioning */
+    padding: 50px; /* Responsive padding */
+    overflow: hidden; /* Hide overflow to contain box shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add drop shadow behind the container */
+    border-radius: 8px;
+    width: 65%; /* Responsive width */
+    max-width: 800px;
+    background: rgba(40, 40, 40, 0.4); /* Translucent with a slight dark tint */
+}
+
+.song-info {
+    display: flex;
+    align-items: center;
+}
+
+.album-info {
+    margin-right: 20px; /* Adjusted margin */
+}
+
+.album-info img {
+    width: 11; /* Adjusted width */
+    max-width: 150px; /* Max width for smaller screens */
+    border-radius: 4px;
+    object-fit: cover; /* Ensure image covers the entire container */
+    cursor: pointer; /* Add pointer cursor for clickable effect */
+    margin-bottom: 2px; /* Reduce the bottom margin */
+}
+
+#song-name,
+#artist-name {
+    font-family: "CircularStd-Book", Arial, sans-serif; /* Use custom font */
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Update the margin-bottom of #song-name */
+#song-name {
+    color: #fff;
+    margin-bottom: 2px; /* Reduce the bottom margin */
+    font-size: 50px; /* Responsive font size */
+}
+
+/* Update the margin-top of #artist-name */
+#artist-name {
+    color: rgba(255, 255, 255, 0.8); /* Slightly darker white */
+    font-size: 35px; /* Responsive font size */
+    margin-top: 2px; /* Reduce the top margin */
+}
+
+.lyrics {
+    font-family: "CircularStd-Book", Arial, sans-serif; /* Use custom font */
+    background-color: transparent; /* Remove background color */
+    padding: 63px; /* Responsive padding */
+    margin-top: -50px; /* Distance from album art */
+    margin-left: -67px; /* Start from same left position as the album art */
+    width: 100%; /* Responsive width */
+    font-size: 50px; /* Responsive font size */
+    line-height: 1.2; /* Adjusted line height */
+    min-height: 100px; /* Ensure a minimum height */
+    word-wrap: break-word; /* Allow long words to wrap */
+    white-space: pre-wrap; /* Preserve formatting */
+}
+
+.lyrics:focus {
+    outline: none;
+}
+
+.watermark {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: "CircularStd-Book", Arial, sans-serif; /* Use custom font */
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    cursor: pointer;
+}
+
+.test-grabber {
+    position: absolute;
+    bottom: 25px;
+    left: 10px;
+    font-family: "CircularStd-Book", Arial, sans-serif; /* Use custom font */
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    cursor: pointer;
+}
+
+.save-image {
+    position: absolute;
+    bottom: 25px;
+    left: 10px;
+    font-family: "CircularStd-Book", Arial, sans-serif; /* Use custom font */
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    cursor: pointer;
+}
+
+.toggle-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 55px;
+    font-family: "CircularStd-Book", Arial, sans-serif; /* Use custom font */
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    cursor: pointer;
+}
